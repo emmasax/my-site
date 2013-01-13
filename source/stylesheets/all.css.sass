@@ -9,6 +9,7 @@
 
   .featured
     // min-height: 350px
+    padding-bottom: 70px
     h2, h3, p
       width: 45%
     h3
@@ -16,8 +17,10 @@
       
 @media all and (min-width: 500px)
   .featured
-    background-size: auto auto, auto auto
-    background-position: 100% 100%, 94% 40px
+    background-size: auto auto
+    background-position: 94% 40px
+    clear: both
+    padding-bottom: 90px
     
   .blog
     .content
@@ -35,19 +38,26 @@
   .intro
     float: right
     clear: none
-    width: 55%
+    width: 60%
     margin: 40px 6% 40px 0
-  .featured
-    clear: both
     
 @media all and (min-width: 600px)  
-
+  .intro
+    h1
+      font-size: 2rem
+    p
+      font-size: 1.2rem
+  .featured
+    // padding-bottom: 80px
 
 @media all and (min-width: 768px)
+  .intro
+    margin-top: 60px
   .featured
-    background-position: 100% 100%, 94% 40px    
+    background-position: 94% 40px 
     // min-height: 400px
-    background-image: url(../images/bottom-shadow.png), url(../images/uswitch-tablet.png) 
+    background-image: url(../images/uswitch-tablet.png) 
+    padding-bottom: 55px
     h3
       padding: 0 5px
     img
@@ -57,9 +67,19 @@
       &.tablet
         display: block
   
-
-      
-      
+@media all and (min-width: 900px)
+  body
+    max-width: 1080px
+    margin: 40px auto
+    font-size: 16px
+  .intro
+    h1
+      font-size: 2.75rem
+    p
+      font-size: 1.4rem
+      font-weight: normal
+  .featured
+    padding-bottom: 30px
       
       
     
