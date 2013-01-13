@@ -1,0 +1,34 @@
+!!! 5
+/[if lt IE 7 ] <html lang="en" class="no-js ie6">
+/[if IE 7 ] <html lang="en" class="no-js ie7">
+/[if IE 8 ] <html lang="en" class="no-js ie8">
+/[if IE 9 ] <html lang="en" class="no-js ie9">
+/ [if (gt IE 9)|!(IE)]><!
+%html{:lang => "en"}
+  / <![endif]
+  %head
+    %meta{:charset => "utf-8"}
+    %link{:rel=>"shortcut icon", :href=> "favicon.png", :type=>"image/x-icon"}
+    %title Emma Sax: Front-end developer
+
+    %meta(name="HandheldFriendly" content="True")
+    %meta(name="MobileOptimized" content="320")
+    %meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+    %script{:src => "/javascripts/modernizr.js" }
+
+    = stylesheet_link_tag "all"
+
+    / /[if lt IE 9]
+    /   = stylesheet_link_tag "all-ie"
+
+    -if content_for?(:head)
+      =yield_content :head
+
+  %body
+    = yield
+
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js" }
+
+    -if content_for?(:javascript)
+      =yield_content :javascript
