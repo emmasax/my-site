@@ -17,11 +17,43 @@
       max-height: 350px
       right: -20px
       
+@media all and (min-width: 500px)
+  .featured
+    img
+      right: 6%
+  .blog
+    .content
+      width: 81%
+      p
+        display: block
+
+@media all and (min-width: 500px)
+  .top
+    float: left
+    width: 20%
+    margin: 0 0 40px 6%
+    img
+      margin: 0
+      max-width: 100%
+      
+  .intro
+    float: right
+    clear: none
+    width: 55%
+    margin: 40px 6% 40px 0
+  .featured
+    clear: both
+    
+  
 @media all and (min-width: 768px)
   .featured
     min-height: 400px
     img
       max-height: none
+      &.mobile
+        display: none
+      &.tablet
+        display: block
   
 
       
