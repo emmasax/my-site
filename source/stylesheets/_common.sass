@@ -27,7 +27,13 @@ h2
   font-weight: 300
   font-size: 1.65rem
   margin-bottom: 5px
-  
+
+.container, .blog, .recent
+  position: relative
+  background: #fff
+  z-index: 10
+  overflow: hidden
+
 .top
   img
     display: block
@@ -61,10 +67,10 @@ h2
 .featured
   position: relative
   overflow: hidden
-  min-height: 290px
-  padding: 20px 0
-  background: #E9EDED
-  margin-bottom: 30px
+  background: url(../images/bottom-shadow.png) no-repeat 100% 100%, #E9EDED url(../images/uswitch-mobile.png) no-repeat 110% 30px
+  background-attachment: scroll, fixed
+  background-size: auto auto, 45% auto
+  padding: 20px 0 60px
   h2, h3, p
     margin-left: 6%
     margin-right: 6%
@@ -75,7 +81,7 @@ h2
     background: #B01220
     color: #fff
     display: inline-block
-    padding: 0 0 0 2%
+    padding: 0 0 0 1%
     position: relative
     margin-bottom: 2px
     font-size: 1.1rem
@@ -89,15 +95,16 @@ h2
       top: 0
       display: inline-block
       content: " "
-  img
-    position: absolute
-    max-height: 290px
-    top: 20px
-    right: -10%
-    &.tablet
-      display: none
+  // img
+  //   position: fixed
+  //   max-height: 290px
+  //   // top: 50px
+  //   right: -10%
+  //   &.tablet
+  //     display: none
       
 .blog
+  padding-top: 30px
   margin-bottom: 10px
   overflow: hidden
   h2

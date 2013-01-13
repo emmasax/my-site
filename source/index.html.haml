@@ -1,32 +1,33 @@
-.top
-  %img.logo{:src=>"images/logo-mobile.png", :alt=>""}
-  .social
-    %h2 Contact me
-    %ul
-      %li
-        %a{:href=>"http://www.twitter.com/emmasax"}
-          %img{:src=>"images/twitter.png", :alt=>"My tweets"}
-      %li
-        %a{:href=>"http://uk.linkedin.com/pub/emma-sax/3/618/490"}
-          %img{:src=>"images/linkedin.png", :alt=>"LinkedIn"}
-      %li
-        %a{:href=>"http://www.punkchip.com/"}
-          %img{:src=>"images/blog.png", :alt=>"My blog"}
-      %li
-        %a{:href=>"mailto:emma@punkchip.com"}
-          %img{:src=>"images/email.png", :alt=>"Email me"}
+.container
+  .top
+    %img.logo{:src=>"images/logo-mobile.png", :alt=>""}
+    .social
+      %h2 Contact me
+      %ul
+        %li
+          %a{:href=>"http://www.twitter.com/emmasax"}
+            %img{:src=>"images/twitter.png", :alt=>"My tweets"}
+        %li
+          %a{:href=>"http://uk.linkedin.com/pub/emma-sax/3/618/490"}
+            %img{:src=>"images/linkedin.png", :alt=>"LinkedIn"}
+        %li
+          %a{:href=>"http://www.punkchip.com/"}
+            %img{:src=>"images/blog.png", :alt=>"My blog"}
+        %li
+          %a{:href=>"mailto:emma@punkchip.com"}
+            %img{:src=>"images/email.png", :alt=>"Email me"}
   
-.intro  
-  %h1 Hello, I'm Emma Sax.
-  %p I develop dynamic and responsive websites that look fantastic on any device.
+  .intro  
+    %h1 Hello, I'm Emma Sax.
+    %p I develop dynamic and responsive websites that look fantastic on any device.
 
 .featured
   %h2 Featured
   %h3 
     %a{:href=>"http://www.uswitch.com/gas-electricity/"} uSwitch.com
   %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id metus lectus. Maecenas a augue dolor, in facilisis lectus. Vivamus arcu odio, scelerisque nec tincidunt ut, gravida a velit.
-  %img.mobile{:src=>"images/uswitch-mobile.png", :alt=>"Mobile version of uSwitch.com website"}
-  %img.tablet{:src=>"images/uswitch-tablet.png", :alt=>"Mobile version of uSwitch.com website"}
+  / %img.mobile{:src=>"images/uswitch-mobile.png", :alt=>"Mobile version of uSwitch.com website"}
+  / %img.tablet{:src=>"images/uswitch-tablet.png", :alt=>"Mobile version of uSwitch.com website"}
 
 .blog
   %h2 Blog
@@ -71,3 +72,12 @@
       %img{:src=>"images/work4.png", :alt=>""}
       %h3 Punkchip
       %p Personal blog
+
+-content_for :javascript do
+  :javascript
+    var containerHeight = $('.container').height() - 220;
+    console.log(containerHeight)
+    
+    $('.featured img').css('bottom', containerHeight + 'px');
+    
+    
