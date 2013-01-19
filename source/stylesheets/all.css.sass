@@ -1,27 +1,28 @@
+$darkest: #2C2825
+$darker: #643331
+$dark: #864543
+$mid: #AE4B46
+$light: #A19C7F
+$lightest: #E2C59D
+
 @import url(http://fonts.googleapis.com/css?family=Bad+Script|Rock+Salt|Nothing+You+Could+Do|Loved+by+the+King)
 @import url(http://fonts.googleapis.com/css?family=Dosis:300,400|Monda|Montserrat)
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans|Open+Sans:400,300|Open+Sans+Condensed:700,300)
 @import "common"
 
 @media all and (min-width: 350px)
-  body
-    font-size: 14px
-
   .featured
-    // min-height: 350px
-    padding-bottom: 70px
     h2, h3, p
       width: 45%
-    h3
-      margin-bottom: 5px
       
 @media all and (min-width: 500px)
 
   .featured
-    background-size: auto auto
+    background-size: 25%  auto
     background-position: 94% 40px
     clear: both
-    padding-bottom: 90px
+    h2, h3, p
+      width: 55%
     
   .blog
     .content
@@ -37,28 +38,51 @@
       max-width: 100%
       
   .intro
-    float: right
+    float: left
     clear: none
     width: 60%
-    margin: 40px 6% 40px 0
+    margin: 60px 6% 40px
+    h1, p
+      font-size: 1.85rem
     
-@media all and (min-width: 600px)  
+    
+@media all and (min-width: 600px)
+  body
+    font-size: 16px
+
   .intro
-    h1
+    h1, p
       font-size: 2rem
-    p
-      font-size: 1.2rem
+  
   .featured
-    // padding-bottom: 80px
+    p
+      max-width: 350px
 
 @media all and (min-width: 768px)
   .intro
     margin-top: 60px
+    max-width: 460px
+    
   .featured
-    background-image: url(../images/uswitch-tablet.png) 
+    background-image: url(../images/uswitch-tablet.png)
+    background-size: 220px auto
     padding-bottom: 55px
+    padding-top: 60px
+    min-height: 245px
+    .skills
+      position: static
+      ul
+        margin-left: 20px
+      li
+        list-style-type: circle
+        font-size: 0.95rem
+        font-weight: bold
+        color: $darker
+    p
+      margin-bottom: 10px
     h3
-      padding: 0 5px
+      max-width: 400px
+      margin-bottom: 10px
     img
       max-height: none
       &.mobile
@@ -66,20 +90,18 @@
       &.tablet
         display: block
   
-@media all and (min-width: 900px)
+@media all and (min-width: 910px)
   body
-    max-width: 1080px
     margin: 40px auto
     font-size: 16px
+
   .intro
-    h1
-      font-size: 2.75rem
-    p
-      font-size: 1.4rem
-      font-weight: normal
+    max-width: 600px
+    h1, p
+      font-size: 2.5rem
+
   .featured
-    padding-bottom: 30px
-    background-position: 87% 40px
+    background-image: url(../images/uswitch-desktop.png)
     h2, h3, p
       width: 50%
       
