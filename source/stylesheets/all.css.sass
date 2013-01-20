@@ -21,12 +21,14 @@ $lightest: #E2C59D
     background-size: 25%  auto
     background-position: 94% 40px
     clear: both
-    h2, h3, p
-      width: 55%
+    img
+      right: 10px
+    .skills
+      ul
+        margin-bottom: 35px
     
   .blog
     .content
-      width: 81%
       p
         display: block
 
@@ -50,13 +52,31 @@ $lightest: #E2C59D
   body
     font-size: 16px
 
+  h2
+    font-size: 2rem
+
+  .blog
+    h2
+      margin-bottom: 10px
+    .content 
+      width: 81%
+      max-width: 600px
+      h3
+        font-size: 1.4rem
+    .date, .source
+      // line-height: 2.55
+      margin-top: 5px
+      
   .intro
     h1, p
       font-size: 2rem
   
   .featured
+    margin-bottom: 10px
     p
       max-width: 350px
+    img
+      right: 6%
 
 @media all and (min-width: 768px)
   .intro
@@ -64,44 +84,84 @@ $lightest: #E2C59D
     max-width: 460px
     
   .featured
-    background-image: url(../images/uswitch-tablet.png)
+    // background-image: url(../images/uswitch-tablet.png)
     background-size: 220px auto
-    padding-bottom: 55px
-    padding-top: 60px
-    min-height: 245px
-    .skills
-      position: static
-      ul
-        margin-left: 20px
-      li
-        list-style-type: circle
-        font-size: 0.95rem
-        font-weight: bold
-        color: $darker
+    // padding-bottom: 40px
+    // min-height: 255px
+    .inner
+      padding-top: 30px
     p
+      margin-bottom: 20px
+    h2
       margin-bottom: 10px
     h3
       max-width: 400px
-      margin-bottom: 10px
+      margin-bottom: 15px
+      font-size: 1.4rem
+      height: 30px
+      &:after
+        border-top-width: 16px
+        border-bottom-width: 16px
+        border-left-width: 16px
+        right: -16px
     img
-      max-height: none
+      right: 3%
       &.mobile
         display: none
       &.tablet
-        display: block
+        display: inline
   
+@media all and (min-width: 850px)
+  .featured
+    // background-image: url(../images/uswitch-desktop.png)
+    background-size: 560px auto
+    background-position: 140% 30px
+    h3, p, h2
+      width: 38%
+    img
+      right: -130px
+      width: 65%
+      bottom: 0
+      top: auto
+      &.tablet
+        display: none
+      &.desktop
+        display: inline
+        
 @media all and (min-width: 910px)
   body
     margin: 40px auto
     font-size: 16px
-
+  
+  .container, .blog, .recent, .featured .inner
+    max-width: 960px
+    margin: 0 auto
+    overflow: hidden
+    position: relative
+    
+  .top
+    margin-left: 0
   .intro
     max-width: 600px
-    h1, p
+    h1
       font-size: 2.5rem
+    p
+      font-size: 2.3rem
+      line-height: 1.1
 
+  .blog, .featured, .recent
+    h2, h3, p, ul
+      margin-left: 0
+    li
+      padding-left: 0
+      
   .featured
-    background-image: url(../images/uswitch-desktop.png)
-    h2, h3, p
-      width: 50%
+    background-size: 560px auto
+    background-position: 120% 30px
+    h2, h3, p, .skills
+      margin-left: 0
+    img
+      max-width: 635px
+      width: 52%
+      right: 0
       

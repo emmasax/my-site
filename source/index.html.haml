@@ -22,39 +22,46 @@
     %p I develop dynamic and responsive websites that look fantastic on any device.
 
 .featured
-  %h2 Featured
-  %h3 
-    %a{:href=>"http://www.uswitch.com/gas-electricity/"} uSwitch.com
-  %p The process to compare energy tariffs on uSwitch.com is carefully designed to be easy to complete on screens of any size from mobile and tablet through to desktop.
-  .skills
-    %ul
-      %li CSS3 media queries
-      %li HTML5
-      %li Responsive web design
+  .inner
+    %img.desktop{:src=>"images/uswitch-desktop.png", :alt=>""}
+    %img.tablet{:src=>"images/uswitch-tablet.png", :alt=>""}
+    %img.mobile{:src=>"images/uswitch-mobile.png", :alt=>""}
+    %h2 Featured
+    %h3 
+      %a{:href=>"http://www.uswitch.com/gas-electricity/"} uSwitch.com
+    %p The process to compare energy tariffs on uSwitch.com is carefully designed to be easy to complete on screens of any size from mobile and tablet through to desktop.
+    .skills
+      %ul
+        %li CSS3 media queries
+        %li HTML5
+        %li Responsive web design
 
 .blog
-  %h2 Blog
+  %h2 Articles
   %ul
     %li
-      .date 19-Dec-2012
-      .content
-        %h3 
-          %a{:href=>"http://www.punkchip.com/2012/12/goodbye-2012/"} Goodbye 2012
-        %p I wanted to do a round-up of things I’ve written in 2012, but quite pathetically that would give me a list of three, so I’ll add to that what I’ve been working on this year.
-
-    %li
-      .date 22-Aug-2012
-      .content
-        %h3
-          %a{:href=>"http://www.punkchip.com/2012/08/same-page-references-or-named-anchors/"} Same page references, or named anchors
-        %p Named anchors have been around since HTML was created and allowed you to link to a different part of a page. They can be referenced by external page by using a hash then the identifier after the URL.
-
-    %li
-      .date 13-May-2012
+      / .date 13-May-2012
+      .source
+        %a{:href=>"http://punkchip.com"} punkchip.com
       .content
         %h3 
           %a{:href=>"http://www.punkchip.com/2012/05/autoplay-is-still-bad-for-all-users/"} Autoplay is still bad for all users
         %p Just over three years ago I wrote an article called Autoplay is bad for all users. It was written a few months after WCAG 2 became a formal recommendation but before HTML5, particular the video element, had really gone into mass production.
+    %li
+      .source
+        %a{:href=>"http://punkchip.com"} punkchip.com
+      .content
+        %h3
+          %a{:href=>"http://www.punkchip.com/2011/03/why-support-javascript-disabled/"} Why we should support users with no Javascript
+        %p Why should we want to support users that, for whatever reason, have Javascript disabled? I had found it difficult to answer this question in a constructive way, whilst also being backed up by research. This post aims to give you some reasons why we should still be supporting users without Javascript.
+    %li
+      / .date 19-Dec-2012
+      .source
+        %a{:href=>"http://guardian.co.uk"} guardian.co.uk
+      .content
+        %h3 
+          %a{:href=>"http://www.guardian.co.uk/help/insideguardian/2010/jun/30/blogpost"} Introducing our new picture galleries
+        %p Front-end developer Emma Sax explains how - and why - we moved to a full-page gallery experience.
 
 .recent
   %h2 Recent
@@ -76,11 +83,11 @@
       %h3 Punkchip
       %p Personal blog
 
--content_for :javascript do
-  :javascript
-    var containerHeight = $('.container').height() - 220;
-    console.log(containerHeight)
-    
-    $('.featured img').css('bottom', containerHeight + 'px');
+/ -content_for :javascript do
+/   :javascript
+/     var containerHeight = $('.container').height() - 220;
+/     console.log(containerHeight)
+/     
+/     $('.featured img').css('bottom', containerHeight + 'px');
     
     
