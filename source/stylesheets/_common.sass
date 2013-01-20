@@ -112,13 +112,13 @@ h2
   img
     position: absolute
     top: 20px
-    right: -50px
+    right: -80px
     &.desktop, &.tablet
       display: none
       
 .blog
   padding-top: 30px
-  margin-bottom: 10px
+  margin-bottom: 20px
   overflow: hidden
   h2
     margin-left: 6%
@@ -127,7 +127,7 @@ h2
     clear: left
     padding-left: 6%
     padding-right: 6%
-    margin-bottom: 20px
+    margin-bottom: 30px
     overflow: hidden
     
   .date, .source
@@ -157,17 +157,45 @@ h2
   h2
     margin-left: 6%
     margin-right: 6%
+  // h3
+  //   color: $darker
+  //   float: left
   h3
-    color: $darker
-    
+    font-family: 'Open Sans Condensed', sans-serif
+    font-weight: 300
+    background: $dark
+    color: #fff
+    display: inline-block
+    padding: 0 0 2px 1%
+    position: relative
+    margin-bottom: 5px
+    // margin-left: 1px
+    // margin-top: 10px
+    font-size: 1.1rem
+    height: 24px
+    width: 93%
+    &:after
+      border-top: 13px solid transparent
+      border-bottom: 13px solid transparent
+      border-left: 13px solid $dark
+      position: absolute
+      right: -13px
+      top: 0
+      display: inline-block
+      content: " "
+  p.type
+    // float: right
+    // line-height: 1.7
   ul
     overflow: hidden
     margin-left: 6%
   li
-    width: 44%
     margin-bottom: 20px
     margin-right: 6%
-    float: left
+    overflow: hidden
   img
-    max-width: 100%
+    max-width: 93.5%
+    border: 1px solid $dark
+    vertical-align: bottom
+    margin-top: 1px
     

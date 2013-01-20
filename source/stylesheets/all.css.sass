@@ -11,6 +11,17 @@ $lightest: #E2C59D
 @import "common"
 
 @media all and (min-width: 350px)
+  .social
+    display: block
+    position: absolute
+    right: 0
+    top: 0
+    li
+      display: list-item
+      float: left
+      img
+        max-width: 50px
+  
   .featured
     h2, h3, p
       width: 45%
@@ -28,6 +39,9 @@ $lightest: #E2C59D
         margin-bottom: 35px
     
   .blog
+    li
+      margin-bottom: 40px
+    
     .content
       p
         display: block
@@ -38,7 +52,12 @@ $lightest: #E2C59D
     margin: 0 0 40px 6%
     img
       max-width: 100%
-      
+  
+  .recent
+    li
+      width: 44%
+      float: left
+    
   .intro
     float: left
     clear: none
@@ -110,6 +129,20 @@ $lightest: #E2C59D
         display: none
       &.tablet
         display: inline
+
+  .recent
+    h3
+      // max-width: 400px
+      margin-bottom: 0
+      font-size: 1.4rem
+      height: 30px
+      padding-left: 3px
+      &:after
+        border-top-width: 16px
+        border-bottom-width: 16px
+        border-left-width: 16px
+        right: -16px
+    
   
 @media all and (min-width: 850px)
   .featured
@@ -127,6 +160,17 @@ $lightest: #E2C59D
         display: none
       &.desktop
         display: inline
+  
+  .blog
+    margin-bottom: 20px
+    
+  .recent
+    img
+      max-width: 93%
+    
+    li
+      width: 30%
+      margin-right: 3%
         
 @media all and (min-width: 910px)
   body
@@ -135,7 +179,8 @@ $lightest: #E2C59D
   
   .container, .blog, .recent, .featured .inner
     max-width: 960px
-    margin: 0 auto
+    margin-left: auto
+    margin-right: auto
     overflow: hidden
     position: relative
     
@@ -154,6 +199,13 @@ $lightest: #E2C59D
       margin-left: 0
     li
       padding-left: 0
+  
+  .recent
+    h3
+      padding-left: 2%
+      width: 91.5%
+    // img
+    //   max-width: 91%
       
   .featured
     background-size: 560px auto
