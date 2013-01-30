@@ -3,11 +3,16 @@ body, ul, ol, li, h1, h2, h3, h4, p
   padding: 0
 
 body
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-family: 'Lucida Grande', Helvetica, Arial, sans-serif
   color: $darkest
-  margin: 20px 0
+  margin: 0 auto 40px
   font-size: 14px
   // width: 320px
+  // width: 400px
+  // width: 500px
+  // width: 600px
+  // width: 768px
+  width: 850px
 
 a
   text-decoration: none
@@ -28,6 +33,9 @@ h2
   font-size: 1.65rem
   margin-bottom: 5px
 
+.container
+  padding-top: 40px
+  
 .container, .blog, .recent
   position: relative
   background: #fff
@@ -54,65 +62,68 @@ h2
   margin: 0 6% 40px
   h1, p
     color: $darker
-    // font-family: 'Bad Script', cursive
     font-family: 'Open Sans Condensed', sans-serif
+    // font-family: 'Bad Script', cursive
     // font-family: 'Rock Salt', cursive
     // font-family: 'Nothing You Could Do', cursive
     // font-family: 'Loved by the King', cursive
   h1, p
-    font-size: 1.5rem
+    font-size: 1.35rem
   p
     line-height: 1
 
 .featured
   position: relative
   overflow: hidden
-  background-color: rgba($lightest, 0.5)
-  // background: url(../images/uswitch-mobile.png) no-repeat 110% 25px
-  background-size: 45% auto
-  // box-shadow: inset 0 0 15px $dark
+  background-color: rgba($mid, 1)
+  color: #fff
+  // background-size: 45% auto
   .inner
-    padding: 20px 0 0
+    padding: 15px 0 0
+  h2
+    margin-bottom: 10px
   h2, h3, p, .skills
     margin-left: 6%
-    margin-right: 6%
-    width: 45%
+    width: 50%
   h3
     font-family: 'Open Sans Condensed', sans-serif
     font-weight: 300
-    background: $mid
+    background: $darker
     color: #fff
     display: inline-block
     padding: 0 0 2px 1%
     position: relative
-    margin-bottom: 5px
+    margin-bottom: 15px
     font-size: 1.1rem
     height: 24px
+    -webkit-transition: width 300ms ease
     &:after
       border-top: 13px solid transparent
       border-bottom: 13px solid transparent
-      border-left: 13px solid $mid
+      border-left: 13px solid $darker
       position: absolute
       right: -13px
       top: 0
       display: inline-block
       content: " "
   p
-    margin-bottom: 10px
+    font-size: 0.8rem
+    line-height: 1.4
+    margin-bottom: 25px
   .skills
     ul
-      margin-left: 20px
-      margin-bottom: 20px
+      margin-left: 15px
+      margin-bottom: 15px
     li
-      list-style-type: circle
-      font-size: 0.95rem
-      font-weight: bold
+      list-style-type: square
+      font-size: 0.8rem
+      // font-weight: bold
       padding-bottom: 5px
-      color: $darker
+      color: #fff
   img
     position: absolute
     top: 20px
-    right: -80px
+    right: -90px
     &.desktop, &.tablet
       display: none
       

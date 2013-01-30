@@ -50,7 +50,7 @@
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
-
+set :http_path, ''
 set :images_dir, 'images'
 
 # Build-specific configuration
@@ -73,5 +73,5 @@ configure :build do
   # activate :smusher
   
   # Or use a different image path
-  # set :http_path, "/Content/images/"
+  set :http_path, "/about/"
 end

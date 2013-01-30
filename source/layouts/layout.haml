@@ -15,9 +15,8 @@
     %meta(name="MobileOptimized" content="320")
     %meta(name="viewport" content="width=device-width, initial-scale=1.0")
 
-    %script{:src => "/javascripts/modernizr.js" }
-
-    = stylesheet_link_tag "all"
+    %script{:src => http_path+"javascripts/modernizr.js" }
+    %link{:href=> http_path+"stylesheets/all.css", :type=>"text/css", :media=>"screen", :rel=>"stylesheet"}
 
     / /[if lt IE 9]
     /   = stylesheet_link_tag "all-ie"
