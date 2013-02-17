@@ -5,6 +5,7 @@ body, ul, ol, li, h1, h2, h3, h4, p
 body
   font-family: 'Lucida Grande', Helvetica, Arial, sans-serif
   color: $darkest
+  background-color: #FAF9E4
   margin: 0 auto 40px
   font-size: 14px
   // width: 320px
@@ -38,7 +39,7 @@ h2
   
 .container, .blog, .recent
   position: relative
-  background: #fff
+  // background: #fff
   z-index: 10
   overflow: hidden
 
@@ -61,7 +62,7 @@ h2
   clear: both
   margin: 0 6% 40px
   h1, p
-    color: $darker
+    color: #912C22
     font-family: 'Open Sans Condensed', sans-serif
     // font-family: 'Bad Script', cursive
     // font-family: 'Rock Salt', cursive
@@ -75,9 +76,8 @@ h2
 .featured
   position: relative
   overflow: hidden
-  background-color: rgba($mid, 1)
-  color: #fff
-  // background-size: 45% auto
+  background-color: rgba(#A19C7F, 0.4)
+  color: #575445
   .inner
     padding: 15px 0 0
   h2
@@ -88,7 +88,7 @@ h2
   h3
     font-family: 'Open Sans Condensed', sans-serif
     font-weight: 300
-    background: $darker
+    background: rgba(#575445, 0.7)
     color: #fff
     display: inline-block
     padding: 0 0 2px 1%
@@ -100,7 +100,7 @@ h2
     &:after
       border-top: 13px solid transparent
       border-bottom: 13px solid transparent
-      border-left: 13px solid $darker
+      border-left: 13px solid rgba(#575445, 0.7)
       position: absolute
       right: -13px
       top: 0
@@ -119,7 +119,7 @@ h2
       font-size: 0.8rem
       // font-weight: bold
       padding-bottom: 5px
-      color: #fff
+      color: #575445
   img
     position: absolute
     top: 20px
@@ -174,7 +174,7 @@ h2
   h3
     font-family: 'Open Sans Condensed', sans-serif
     font-weight: 300
-    background: $dark
+    background: rgba(#575445, 0.7)
     color: #fff
     display: inline-block
     padding: 0 0 2px 1%
@@ -188,7 +188,7 @@ h2
     &:after
       border-top: 13px solid transparent
       border-bottom: 13px solid transparent
-      border-left: 13px solid $dark
+      border-left: 13px solid rgba(#575445, 0.7)
       position: absolute
       right: -13px
       top: 0
@@ -206,7 +206,7 @@ h2
     overflow: hidden
   img
     max-width: 93.5%
-    border: 1px solid $dark
+    border: 1px solid rgba(#575445, 0.7)
     vertical-align: bottom
     margin-top: 1px
     
