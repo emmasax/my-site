@@ -1,0 +1,62 @@
+$gutter: 10%
+
+.container
+  padding-top: 60px
+  
+.intro
+  margin-left: $gutter
+  margin-right: $gutter
+  margin-bottom: 60px
+  
+.social
+  top: 5px
+  right: 5px
+  border-radius: 0
+  background-color: transparent
+  height: auto
+  width: auto
+  li
+    display: list-item
+    float: left
+    padding-left: 5px
+    img
+      max-width: 40px
+      opacity: 0.5
+      -webkit-transition: opacity 300ms ease-out
+    &:hover
+      img
+        opacity: 1
+
+.featured
+  clear: both
+  h2, h3, p, .skills
+    margin-left: $gutter
+    width: 42%
+  img
+    right: -30px
+
+.blog
+  padding-top: 60px
+  margin-bottom: 30px
+  h2
+    margin-left: $gutter
+    margin-right: $gutter
+  li
+    padding-left: $gutter
+    padding-right: $gutter
+  .source
+    padding-bottom: 0
+    line-height: 1.8rem
+    width: 23%
+  .source, .content
+    float: left
+  .content
+    width: 72%
+  
+.recent
+  h2, ul
+    margin-left: $gutter
+    margin-right: $gutter
+  li
+    margin-right: 0
+    margin-bottom: 40px

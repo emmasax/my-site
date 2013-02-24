@@ -1,3 +1,5 @@
+$gutter: 6%
+
 body, ul, ol, li, h1, h2, h3, h4, p
   margin: 0
   padding: 0
@@ -13,7 +15,7 @@ body
   // width: 500px
   // width: 600px
   // width: 768px
-  width: 850px
+  // width: 850px
 
 a
   text-decoration: none
@@ -30,6 +32,7 @@ h2
   // font-family: 'Open Sans', sans-serif
   font-family: 'Open Sans Condensed', sans-serif
   text-transform: uppercase
+  color: #912C22
   font-weight: 300
   font-size: 1.65rem
   margin-bottom: 5px
@@ -39,7 +42,6 @@ h2
   
 .container, .blog, .recent
   position: relative
-  // background: #fff
   z-index: 10
   overflow: hidden
 
@@ -60,15 +62,11 @@ h2
 
 .intro
   clear: both
-  margin: 0 6% 40px
+  margin: 0 $gutter 40px
   h1, p
     color: #912C22
-    font-family: 'Open Sans Condensed', sans-serif
-    // font-family: 'Bad Script', cursive
-    // font-family: 'Rock Salt', cursive
     // font-family: 'Nothing You Could Do', cursive
-    // font-family: 'Loved by the King', cursive
-  h1, p
+    font-family: 'Open Sans Condensed', sans-serif
     font-size: 1.35rem
   p
     line-height: 1
@@ -82,8 +80,9 @@ h2
     padding: 15px 0 0
   h2
     margin-bottom: 10px
+    color: #575445
   h2, h3, p, .skills
-    margin-left: 6%
+    margin-left: $gutter
     width: 50%
   h3
     font-family: 'Open Sans Condensed', sans-serif
@@ -106,6 +105,7 @@ h2
       top: 0
       display: inline-block
       content: " "
+      // -webkit-transition: all 300ms ease
   p
     font-size: 0.8rem
     line-height: 1.4
@@ -117,7 +117,6 @@ h2
     li
       list-style-type: square
       font-size: 0.8rem
-      // font-weight: bold
       padding-bottom: 5px
       color: #575445
   img
@@ -128,37 +127,31 @@ h2
       display: none
       
 .blog
-  padding-top: 30px
+  padding-top: 40px
   margin-bottom: 20px
   overflow: hidden
   h2
-    margin-left: 6%
-    margin-right: 6%
+    margin-left: $gutter
+    margin-right: $gutter
   li
     clear: left
-    padding-left: 6%
-    padding-right: 6%
+    padding-left: $gutter
+    padding-right: $gutter
     margin-bottom: 30px
     overflow: hidden
     
   .date, .source
     font-size: 0.7rem
-    // line-height: 2.4
     color: $mid
-    min-width: 80px
-    width: 15%
-    max-width: 95px
-    float: left
+    padding-bottom: 5px
     overflow: hidden
   .content
-    float: left
-    width: 73%
     border-left: 1px solid rgba($mid, 0.2)
     padding-left: 3%
     h3
       font-family: 'Open Sans Condensed', sans-serif
       font-weight: 700
-      font-size: 1.2rem
+      font-size: 1.1rem
       color: $darker
     p
       display: none
@@ -166,11 +159,9 @@ h2
 .recent
   margin-bottom: 10px
   h2
-    margin-left: 6%
-    margin-right: 6%
-  // h3
-  //   color: $darker
-  //   float: left
+    margin-left: $gutter
+    margin-right: $gutter
+    color: #575445
   h3
     font-family: 'Open Sans Condensed', sans-serif
     font-weight: 300
@@ -180,8 +171,6 @@ h2
     padding: 0 0 2px 1%
     position: relative
     margin-bottom: 5px
-    // margin-left: 1px
-    // margin-top: 10px
     font-size: 1.1rem
     height: 24px
     width: 93%
@@ -194,15 +183,12 @@ h2
       top: 0
       display: inline-block
       content: " "
-  p.type
-    // float: right
-    // line-height: 1.7
   ul
     overflow: hidden
-    margin-left: 6%
+    margin-left: $gutter
   li
     margin-bottom: 20px
-    margin-right: 6%
+    margin-right: $gutter
     overflow: hidden
   img
     max-width: 93.5%
