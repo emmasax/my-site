@@ -70,20 +70,28 @@
   %ul
     %li
       %img{:src=>"images/team-uswitch.png", :alt=>""}
-      %h3 uSwitch.com
-      %p.type Tech recruitment
+      %h3
+        = succeed ": " do
+          %a{:href=>"http://www.uswitch.com/careers/"} uSwitch
+        recruitment
     %li
       %img{:src=>"images/uswitch-home.png", :alt=>""}
-      %h3 uSwitch.com
-      %p.type Home page
+      %h3 
+        = succeed ": " do
+          %a{:href=>"http://www.uswitch.com/"} uSwitch
+        home page
     %li
       %img{:src=>"images/guardian-gallery.png", :alt=>""}
-      %h3 The Guardian
-      %p.type AJAX photo gallery
+      %h3 
+        = succeed ": " do
+          %a{:href=>"http://www.guardian.co.uk/news/gallery/2013/mar/23/1"} The Guardian
+        AJAX photo gallery
     %li
       %img{:src=>"images/punkchip-blog.png", :alt=>""}
-      %h3 punkchip.com
-      %p.type Personal blog
+      %h3 
+        = succeed ": " do
+          %a{:href=>"http://www.punkchip.com/"} punkchip
+        personal blog
 
 / -content_for :javascript do
 /   :javascript
