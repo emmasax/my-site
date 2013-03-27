@@ -1,25 +1,27 @@
+.social
+  / %h2 Contact me
+  %ul
+    %li
+      %a{:href=>"http://www.twitter.com/emmasax"}
+        %img{:src=>"images/twitter.png", :alt=>"My tweets"}
+    %li
+      %a{:href=>"http://uk.linkedin.com/pub/emma-sax/3/618/490"}
+        %img{:src=>"images/linkedin.png", :alt=>"LinkedIn"}
+    %li
+      %a{:href=>"http://www.punkchip.com/"}
+        %img{:src=>"images/logo-contact.png", :alt=>"My blog"}
+    %li
+      %a{:href=>"mailto:emma@punkchip.com"}
+        %img{:src=>"images/email.png", :alt=>"Email me"}
+
 .container
-  .top
-    %img.logo{:src=>"images/logo2.png", :alt=>""}
-    .social
-      / %h2 Contact me
-      %ul
-        %li
-          %a{:href=>"http://www.twitter.com/emmasax"}
-            %img{:src=>"images/twitter.png", :alt=>"My tweets"}
-        %li
-          %a{:href=>"http://uk.linkedin.com/pub/emma-sax/3/618/490"}
-            %img{:src=>"images/linkedin.png", :alt=>"LinkedIn"}
-        %li
-          %a{:href=>"http://www.punkchip.com/"}
-            %img{:src=>"images/logo-contact.png", :alt=>"My blog"}
-        %li
-          %a{:href=>"mailto:emma@punkchip.com"}
-            %img{:src=>"images/email.png", :alt=>"Email me"}
+  .inner
+    .top
+      / %img.logo{:src=>"images/logo2.png", :alt=>""}
   
-  .intro  
-    %h1 Hello, I'm Emma Sax.
-    %p I develop dynamic and responsive websites that are easy to use and look fantastic on any device.
+    .intro  
+      %h1 Hello, I'm Emma Sax.
+      %p I develop dynamic and responsive websites that are easy to use and look fantastic on any device.
 
 .featured
   .inner
@@ -39,65 +41,61 @@
           %abbr{:title=>"Responsive web design"} RWD
 
 .blog
-  %h2 Articles
-  %ul
-    %li
-      / .date 13-May-2012
-      .source
-        %a{:href=>"http://punkchip.com"} punkchip.com
-      .content
-        %h3 
-          %a{:href=>"http://www.punkchip.com/2012/05/autoplay-is-still-bad-for-all-users/"} Autoplay is still bad for all users
-        %p Just over three years ago I wrote an article called Autoplay is bad for all users. It was written a few months after WCAG 2 became a formal recommendation but before HTML5, particular the video element, had really gone into mass production.
-    %li
-      .source
-        %a{:href=>"http://punkchip.com"} punkchip.com
-      .content
-        %h3
-          %a{:href=>"http://www.punkchip.com/2011/03/why-support-javascript-disabled/"} Why we should support users with no Javascript
-        %p Why should we want to support users that, for whatever reason, have Javascript disabled? I had found it difficult to answer this question in a constructive way, whilst also being backed up by research. This post aims to give you some reasons why we should still be supporting users without Javascript.
-    %li
-      / .date 19-Dec-2012
-      .source
-        %a{:href=>"http://guardian.co.uk"} guardian.co.uk
-      .content
-        %h3 
-          %a{:href=>"http://www.guardian.co.uk/help/insideguardian/2010/jun/30/blogpost"} Introducing our new picture galleries
-        %p Front-end developer Emma Sax explains how - and why - we moved to a full-page gallery experience.
+  .inner
+    %h2 Articles
+    %ul
+      %li
+        / .date 13-May-2012
+        .source
+          %a{:href=>"http://punkchip.com"} punkchip.com
+        .content
+          %h3 
+            %a{:href=>"http://www.punkchip.com/2012/05/autoplay-is-still-bad-for-all-users/"} Autoplay is still bad for all users
+          %p Just over three years ago I wrote an article called Autoplay is bad for all users. It was written a few months after WCAG 2 became a formal recommendation but before HTML5, particular the video element, had really gone into mass production.
+      %li
+        .source
+          %a{:href=>"http://punkchip.com"} punkchip.com
+        .content
+          %h3
+            %a{:href=>"http://www.punkchip.com/2011/03/why-support-javascript-disabled/"} Why we should support users with no Javascript
+          %p Why should we want to support users that, for whatever reason, have Javascript disabled? I had found it difficult to answer this question in a constructive way, whilst also being backed up by research. This post aims to give you some reasons why we should still be supporting users without Javascript.
+      %li
+        / .date 19-Dec-2012
+        .source
+          %a{:href=>"http://guardian.co.uk"} guardian.co.uk
+        .content
+          %h3 
+            %a{:href=>"http://www.guardian.co.uk/help/insideguardian/2010/jun/30/blogpost"} Introducing our new picture galleries
+          %p Front-end developer Emma Sax explains how - and why - we moved to a full-page gallery experience.
 
 .recent
-  %h2 Recent
-  %ul
-    %li
-      %img{:src=>"images/team-uswitch.png", :alt=>""}
-      %h3
-        = succeed ": " do
-          %a{:href=>"http://www.uswitch.com/careers/"} uSwitch
-        recruitment
-    %li
-      %img{:src=>"images/uswitch-home.png", :alt=>""}
-      %h3 
-        = succeed ": " do
-          %a{:href=>"http://www.uswitch.com/"} uSwitch
-        home page
-    %li
-      %img{:src=>"images/guardian-gallery.png", :alt=>""}
-      %h3 
-        = succeed ": " do
-          %a{:href=>"http://www.guardian.co.uk/news/gallery/2013/mar/23/1"} The Guardian
-        AJAX photo gallery
-    %li
-      %img{:src=>"images/punkchip-blog.png", :alt=>""}
-      %h3 
-        = succeed ": " do
-          %a{:href=>"http://www.punkchip.com/"} punkchip
-        personal blog
+  .inner
+    %h2 Recent
+    %ul
+      %li
+        %img{:src=>"images/team-uswitch.png", :alt=>""}
+        %h3
+          = succeed ": " do
+            %a{:href=>"http://www.uswitch.com/careers/"} uSwitch
+          recruitment
+      %li
+        %img{:src=>"images/uswitch-home.png", :alt=>""}
+        %h3 
+          = succeed ": " do
+            %a{:href=>"http://www.uswitch.com/"} uSwitch
+          home page
+      %li
+        %img{:src=>"images/guardian-gallery.png", :alt=>""}
+        %h3 
+          = succeed ": " do
+            %a{:href=>"http://www.guardian.co.uk/news/gallery/2013/mar/23/1"} The Guardian
+          AJAX photo gallery
+      %li
+        %img{:src=>"images/punkchip-blog.png", :alt=>""}
+        %h3 
+          = succeed ": " do
+            %a{:href=>"http://www.punkchip.com/"} punkchip
+          personal blog
 
-/ -content_for :javascript do
-/   :javascript
-/     var containerHeight = $('.container').height() - 220;
-/     console.log(containerHeight)
-/     
-/     $('.featured img').css('bottom', containerHeight + 'px');
-    
-    
+%footer
+  %p Emma Sax &copy;2013
