@@ -16,10 +16,10 @@
     %meta(name="viewport" content="width=device-width, initial-scale=1.0")
 
     %script{:src => http_path+"javascripts/modernizr.js" }
-    %link{:href=> http_path+"stylesheets/all.css", :type=>"text/css", :media=>"screen", :rel=>"stylesheet"}
+    %link{:href=> http_path+"stylesheets/all.css", :type=>"text/css", :media=>"all", :rel=>"stylesheet"}
 
-    / /[if lt IE 9]
-    /   = stylesheet_link_tag "all-ie"
+    /[if lt IE 9]
+      %link{:href=> http_path+"stylesheets/all-ie.css", :type=>"text/css", :media=>"all", :rel=>"stylesheet"}
 
     -if content_for?(:head)
       =yield_content :head
