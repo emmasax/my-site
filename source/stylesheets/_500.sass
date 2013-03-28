@@ -3,6 +3,15 @@ $gutter: 6%
 .container
   padding-top: 60px
   
+.social
+  li
+    img
+      opacity: 0.3
+      -webkit-transition: opacity 300ms ease-out    
+    &:hover
+      img
+        opacity: 1
+  
 .intro
   margin-left: $gutter
   margin-right: $gutter
@@ -12,27 +21,47 @@ $gutter: 6%
   clear: both
   h2, h3, p, .skills
     margin-left: $gutter
-    width: 42%
+    width: 54%
+  h3
+    a
+      -webkit-transition: color 300ms ease
+      &:hover
+        color: #faddca
   img
     right: -30px
 
 .blog
   padding-top: 60px
-  padding-bottom: 100px
+  padding-bottom: 50px
   h2
     margin-left: $gutter
     margin-right: $gutter
+  h3
+    margin-bottom: 15px
+    a
+      -webkit-transition: background 300ms ease-out
+      &:hover
+        background-color: #$brownDark
+  p
+    color: #fff
+    display: block
+    font-size: 0.9rem
+    line-height: 1.5
   li
     padding-left: $gutter
     padding-right: $gutter
+    margin-bottom: 70px
   .source
     padding-bottom: 0
     line-height: 1.8rem
-    width: 23%
+    width: 90px
+    &:hover
+      text-decoration: underline
   .source, .content
     float: left
   .content
-    width: 72%
+    padding-bottom: 5px
+    width: 74%
   
 .recent
   padding-top: 60px
@@ -42,5 +71,12 @@ $gutter: 6%
     margin-left: $gutter
     margin-right: $gutter
   li
+    cursor: pointer
     margin-right: 0
     margin-bottom: 40px
+    -webkit-transition: background 300ms ease-out
+    &:hover
+      background-color: rgba($brown, 0.8)
+    a:hover
+      text-decoration: underline
+      
